@@ -9,14 +9,14 @@
 #include <stdlib.h>
 
 /*
- * Codigo con error del Ejercicio 1 del TP08 
+ * Codigo corregido del Ejercicio 1 del TP08 
  */
 int main(int argc, char** argv) {
 
     char a = 'h';
     void *p;
     p = &a;
-    printf("a: %c\n", *p);
+    printf("a: %c\n", *((char*)p));
     return (EXIT_SUCCESS);
 }
 
